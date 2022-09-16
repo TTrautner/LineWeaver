@@ -21,7 +21,7 @@
 #define GLM_ENABLE_EXPERIMENTAL
 #include <glm/gtx/string_cast.hpp>
 
-using namespace molumes;
+using namespace lineweaver;
 using namespace glm;
 
 TableData::TableData() : Table()
@@ -339,7 +339,7 @@ void TableData::loadAndrewsSeries(const std::string& filePath)
 	}
 }
 
-void molumes::TableData::andrewsTransform(int steps, bool normalize)
+void lineweaver::TableData::andrewsTransform(int steps, bool normalize)
 {
 
 	if (normalize)

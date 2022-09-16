@@ -7,7 +7,6 @@
 #include "Viewer.h"
 #include "Scene.h"
 #include "CSV/TableData.h"
-#include <lodepng.h>
 #include <sstream>
 #include <tinyfiledialogs.h>
 
@@ -23,7 +22,7 @@
 #define GLM_ENABLE_EXPERIMENTAL
 #include <glm/gtx/string_cast.hpp>
 
-using namespace molumes;
+using namespace lineweaver;
 using namespace gl;
 using namespace glm;
 using namespace globjects;

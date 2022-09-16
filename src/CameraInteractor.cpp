@@ -19,7 +19,7 @@
 
 #include "Viewer.h"
 
-using namespace molumes;
+using namespace lineweaver;
 using namespace glm;
 using namespace gl;
 

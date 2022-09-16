@@ -2,7 +2,7 @@
 
 #include "Table.h"
 
-using namespace molumes;
+using namespace lineweaver;
 
 Table::Table()
 { 

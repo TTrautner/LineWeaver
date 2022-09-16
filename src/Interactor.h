@@ -1,6 +1,6 @@
 #pragma once
 
-namespace molumes
+namespace lineweaver
 {
 	class Viewer;
 

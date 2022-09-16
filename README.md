@@ -38,7 +38,7 @@ The project uses [CMake](https://cmake.org/) and relies on the following librari
 - Open a shell and run ./fetch-libs.cmd to download all dependencies.
 - Run ./build-libs.cmd to build the dependencies.
 - Run ./configure.cmd to create the Visual Studio solution files (only necessary for Visual Studion versions prior to 2017).
-- Open ./build/molumes.sln in Visual Studio (only necessary for Visual Studion versions prior to 2017, in VS 2017 the CMakeFiles.txt can be opened directly).
+- Open ./build/lineweaver.sln in Visual Studio (only necessary for Visual Studion versions prior to 2017, in VS 2017 the CMakeFiles.txt can be opened directly).
 
 ### License
 

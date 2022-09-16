@@ -15,7 +15,7 @@
 #include <globjects/Shader.h>
 #include <globjects/base/File.h>
 
-namespace molumes
+namespace lineweaver
 {
 	class Viewer;
 

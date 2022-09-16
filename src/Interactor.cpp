@@ -1,5 +1,5 @@
 #include "Interactor.h"
-using namespace molumes;
+using namespace lineweaver;
 
 Interactor::Interactor(Viewer* viewer) : m_viewer(viewer)
 {

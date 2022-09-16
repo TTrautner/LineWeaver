@@ -1,7 +1,7 @@
 #pragma once
 #include "Table.h"
 
-namespace molumes
+namespace lineweaver
 {
 	class TableData : public Table {
 

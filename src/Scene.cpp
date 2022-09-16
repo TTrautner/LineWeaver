@@ -1,6 +1,6 @@
 #include "Scene.h"
 
-using namespace molumes;
+using namespace lineweaver;
 
 Scene::Scene()
 {

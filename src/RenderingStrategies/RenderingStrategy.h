@@ -8,7 +8,7 @@
 
 #include <glbinding/gl/enum.h>
 
-namespace molumes
+namespace lineweaver
 {
 	// Base class
 	class RenderingStrategy {

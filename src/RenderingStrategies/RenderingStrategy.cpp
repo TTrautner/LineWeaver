@@ -1,5 +1,5 @@
 #include "RenderingStrategy.h"
-using namespace molumes;
+using namespace lineweaver;
 
 RenderingStrategy::RenderingStrategy(TableData* data)
 {

@@ -7,7 +7,7 @@
 #include "rapidcsv.h"
 #include "csvfile.h"
 
-namespace molumes
+namespace lineweaver
 {
 	class Table	{
 

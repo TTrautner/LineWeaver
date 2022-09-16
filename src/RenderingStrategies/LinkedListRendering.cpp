@@ -1,6 +1,6 @@
 #include "LinkedListRendering.h"
 
-using namespace molumes;
+using namespace lineweaver;
 using namespace gl;
 using namespace glm;
 

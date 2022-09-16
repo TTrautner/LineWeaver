@@ -4,7 +4,7 @@
 #include "CSV/TableData.h"
 #include "CSV/TableImportance.h"
 
-namespace molumes
+namespace lineweaver
 {
 	class Scene
 	{

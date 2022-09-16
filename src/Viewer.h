@@ -19,7 +19,7 @@
 #include "Interactor.h"
 #include "Renderer.h"
 
-namespace molumes
+namespace lineweaver
 {
 
 	class Viewer

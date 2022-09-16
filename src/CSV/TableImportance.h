@@ -3,7 +3,7 @@
 #include "Table.h"
 #include "TableData.h"
 
-namespace molumes
+namespace lineweaver
 {
 	class TableImportance : public Table {
 

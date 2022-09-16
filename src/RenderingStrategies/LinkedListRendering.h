@@ -1,7 +1,7 @@
 #pragma once
 #include "RenderingStrategy.h"
 
-namespace molumes
+namespace lineweaver
 {
 	class LinkedListRendering : public RenderingStrategy {
 

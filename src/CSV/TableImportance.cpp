@@ -20,7 +20,7 @@
 #define GLM_ENABLE_EXPERIMENTAL
 #include <glm/gtx/string_cast.hpp>
 
-using namespace molumes;
+using namespace lineweaver;
 using namespace glm;
 
 TableImportance::TableImportance() : Table()

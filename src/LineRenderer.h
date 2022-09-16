@@ -26,7 +26,7 @@
 #include <globjects/base/StaticStringSource.h>
 #include <globjects/Query.h>
 
-namespace molumes
+namespace lineweaver
 {
 	class Viewer;
 

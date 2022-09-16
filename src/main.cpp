@@ -29,7 +29,7 @@
 using namespace gl;
 using namespace glm;
 using namespace globjects;
-using namespace molumes;
+using namespace lineweaver;
 
 void error_callback(int errnum, const char * errmsg)
 {
@@ -53,7 +53,7 @@ int main(int argc, char *argv[])
 	glfwWindowHint(GLFW_SAMPLES, 8);
 
 	// Create a context and, if valid, make it current
-	GLFWwindow * window = glfwCreateWindow(1280, 720, "molumes", NULL, NULL);
+	GLFWwindow * window = glfwCreateWindow(1280, 720, "lineweaver", NULL, NULL);
 
 	if (window == nullptr)
 	{

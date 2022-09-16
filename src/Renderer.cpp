@@ -1,5 +1,5 @@
 #include "Renderer.h"
-using namespace molumes;
+using namespace lineweaver;
 
 Renderer::Renderer(Viewer* viewer) : m_viewer(viewer)
 {

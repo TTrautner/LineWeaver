@@ -20,5 +20,5 @@ target_link_libraries(lineweaver PRIVATE imgui::imgui)
 find_package(tinyfiledialogs CONFIG REQUIRED)
 target_link_libraries(lineweaver PRIVATE tinyfiledialogs::tinyfiledialogs)
 
-find_path(STB_INCLUDE_DIRS "stb.h")
+find_path(STB_INCLUDE_DIRS "stb_c_lexer.h")
 target_include_directories(lineweaver PRIVATE ${STB_INCLUDE_DIRS})

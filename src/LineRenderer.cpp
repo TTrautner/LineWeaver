@@ -43,19 +43,19 @@ LineRenderer::LineRenderer(Viewer* viewer) : Renderer(viewer)
 	m_shaderSourceDefines = StaticStringSource::create("");
 	m_shaderDefines = NamedString::create("/defines.glsl", m_shaderSourceDefines.get());
 
-	m_shaderSourceGlobals = File::create("./res/sphere/globals.glsl");
+	m_shaderSourceGlobals = File::create("./res/line/globals.glsl");
 	m_shaderGlobals = NamedString::create("/globals.glsl", m_shaderSourceGlobals.get());
 	//------------------------------------------------------------------------------------------------------
-	m_vertexShaderSourceLine = Shader::sourceFromFile("./res/sphere/line-vs.glsl");
-	m_geometryShaderSourceLine = Shader::sourceFromFile("./res/sphere/line-gs.glsl");
-	m_fragmentShaderSourceLine = Shader::sourceFromFile("./res/sphere/line-fs.glsl");
+	m_vertexShaderSourceLine = Shader::sourceFromFile("./res/line/line-vs.glsl");
+	m_geometryShaderSourceLine = Shader::sourceFromFile("./res/line/line-gs.glsl");
+	m_fragmentShaderSourceLine = Shader::sourceFromFile("./res/line/line-fs.glsl");
 	//------------------------------------------------------------------------------------------------------
-	m_vertexShaderSourceImage = Shader::sourceFromFile("./res/sphere/image-vs.glsl");
-	m_geometryShaderSourceImage = Shader::sourceFromFile("./res/sphere/image-gs.glsl");
+	m_vertexShaderSourceImage = Shader::sourceFromFile("./res/line/image-vs.glsl");
+	m_geometryShaderSourceImage = Shader::sourceFromFile("./res/line/image-gs.glsl");
 	//------------------------------------------------------------------------------------------------------
-	m_fragmentShaderSourceBlur = Shader::sourceFromFile("./res/sphere/blur-fs.glsl");
+	m_fragmentShaderSourceBlur = Shader::sourceFromFile("./res/line/blur-fs.glsl");
 	//------------------------------------------------------------------------------------------------------
-	m_fragmentShaderSourceBlend = Shader::sourceFromFile("./res/sphere/blend-fs.glsl");
+	m_fragmentShaderSourceBlend = Shader::sourceFromFile("./res/line/blend-fs.glsl");
 	//------------------------------------------------------------------------------------------------------
 
 	m_vertexShaderTemplateLine = Shader::applyGlobalReplacements(m_vertexShaderSourceLine.get());

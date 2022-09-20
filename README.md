@@ -1,8 +1,10 @@
 # Line Weaver
 
 Repository: https://github.com/TTrautner/LineWeaver
+DOI: https://doi.org/10.1111/cgf.14316
 
-### Abstract
+
+## Abstract
 Line charts are an effective and widely used technique for visualizing series of ordered two-dimensional data points. 
 The relationship between consecutive points is thereby indicated by connecting line segments, revealing potential trends 
 or clusters in the underlying data. However, when dealing with an increasing number of lines, the render order has 
@@ -18,9 +20,7 @@ various types of user interaction. Finally, we discuss the potential of our cont
 real-world data sets where classic or naive approaches would fail.
 
 
-## Setup on Windows
-
-### Prerequisites
+## Prerequisites
 
 The project uses [CMake](https://cmake.org/) and relies on the following libraries: 
 
@@ -30,17 +30,51 @@ The project uses [CMake](https://cmake.org/) and relies on the following librari
 - [globjects](https://github.com/cginternals/globjects) 2.0.0 or higher (https://github.com/cginternals/globjects.git) for additional OpenGL wrapping
 - [Dear ImGui](https://github.com/ocornut/imgui) 1.71 or higher (https://github.com/ocornut/imgui.git) for GUI elements
 - [tinyfiledialogs](https://sourceforge.net/projects/tinyfiledialogs/) 3.3.9 or higher (https://git.code.sf.net/p/tinyfiledialogs/code) for dialog functionality
+- [stb](https://github.com/nothings/stb/) (stb_image.h 2.22 or higher and stb_image_write.h 1.13 or higher) or higher (https://github.com/nothings/stb.git) for image loading and saving
 
-- Microsoft Visual Studio 2015 or 2017 (2017 is recommended as it offers CMake integration)
+The project uses vcpkg (https://vcpkg.io) for dependency management, so this should take care of everything. Please follow the instructions on the vcpkg website (https://vcpkg.io/en/getting-started.html) to set it up for your environment. When using visual studio, make sure to install the vcpkg integration using
 
-### Setup
+```
+vcpkg integrate install
+```
 
-- Open a shell and run ./fetch-libs.cmd to download all dependencies.
-- Run ./build-libs.cmd to build the dependencies.
-- Run ./configure.cmd to create the Visual Studio solution files (only necessary for Visual Studion versions prior to 2017).
-- Open ./build/lineweaver.sln in Visual Studio (only necessary for Visual Studion versions prior to 2017, in VS 2017 the CMakeFiles.txt can be opened directly).
+There is a manifest file called ```vcpkg.json``` in the project root folder. When building with CMake for the first time, all dependencies should be downloaded and installed automatically.
 
-### License
+## Building
+
+If you are using Visual Studio, you can use its integrated CMake support to build and run the project.
+
+When instead building from the command line, run the following commands from the project root folder:
+
+```
+mkdir build
+cd build
+cmake ..
+```
+
+After this, you can compile the debug or release versions of the project using 
+
+```
+cmake --build --config Debug
+```
+
+and/or
+
+```
+cmake --build --config Release
+```
+
+After building, the executables will be available in the ```./bin``` folder.
+
+## Running
+
+To correctly locate shaders and other resources (which are stored in the  ```./res``` folder), the program requires the current working directory to be the project root folder. A launch configuration file for Visual Studio (```./.vs/launch.vs.json```) that takes care of this is included, just select ```lineweaver``` as a startup item in the toolbar. When running from the command line, make sure that you are in the project root folder and execute
+
+```
+./bin/lineweaver
+```
+
+## License
 
 Copyright (c) 2021, Thomas Trautner. Released under the [GPLv3 License](LICENSE.md).
 Please visite https://vis.uib.no/team/thomas-trautner/ for contact information.

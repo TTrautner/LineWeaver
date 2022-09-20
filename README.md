@@ -73,6 +73,9 @@ To correctly locate shaders and other resources (which are stored in the  ```./r
 ```
 ./bin/lineweaver
 ```
+## Usage
+
+After starting the program, choose either ```Trajectory``` or ```Series``` as "File Mode". In case of ```Trajectory``` click on the "Browse" button to select a data file located in the ```./dat``` folder. If desired, select the corresponding importance file using the "Browse" button below for importances. These are located in the ```./dat/importance``` folder and have the same name as the trajectory data set including the suffix ```-importance```. In case of ```Series``` as "File Mode", use the first "Browse" button to select a data file located in the ```./data/series/``` folder. These do not require importance files as importance is then implicitly derived.
 
 ## License
 
